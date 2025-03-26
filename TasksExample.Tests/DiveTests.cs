@@ -15,4 +15,16 @@ public class DiveTests
 
         rebSubstitute.Received().PerformLeakTest();
     }
+
+    [Fact]
+    public void ShoudlNotDiveWithoutPreparation()
+    {
+        var rebSubstitute = Substitute.For<IUnderwaterBreathingApparatus>();
+
+        var diveUnderTest = new Dive(rebSubstitute);
+        diveUnderTest.PrepareRebreather();
+        diveUnderTest.DiveWithRebreather();
+
+        rebSubstitute.Received().FillScrubber();
+    }
 }
