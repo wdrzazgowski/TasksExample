@@ -26,5 +26,6 @@ public class DiveTests
         diveUnderTest.DiveWithRebreather();
 
         rebSubstitute.Received().FillScrubber();
+        rebSubstitute.Received().FixHead();
     }
 }
