@@ -34,8 +34,8 @@ public class Rebreather : IUnderwaterBreathingApparatus
         return true;
     }
 
-    public void BreatheUnderwater()
+    public void BreatheUnderwater(int timeInMinutes)
     {
-        Console.WriteLine("Breathing underwater...");
+        Console.WriteLine($"Breathing underwater...for {timeInMinutes} minutes");
     }
 }

@@ -12,4 +12,6 @@ public interface IUnderwaterBreathingApparatus
     /// Allows the user to breathe underwater.
     /// </summary>
     public void BreatheUnderwater();
+    public void AddOxygen(int amount);
+    public float OxygenPartialPressure { get; }
 }
