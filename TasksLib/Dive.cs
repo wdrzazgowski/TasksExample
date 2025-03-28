@@ -14,7 +14,7 @@ public class Dive
         if(_rebreather == null)
             throw new ArgumentNullException(nameof(_rebreather));
 
-        _rebreather.BreatheUnderwater();
+        _rebreather.BreatheUnderwater(20);
     }
 
     public bool PrepareRebreather()
